@@ -3,6 +3,11 @@ import {MobileView, BrowserView} from "react-device-detect";
 import { Button, Card, Col, Container, Row, Form, Tabs, Tab, ListGroup, Nav } from 'react-bootstrap';
 import style from '../assets/style.png'
 import dp from '../assets/dp.png'
+import pic1 from '../assets/1.jpeg'
+import pic2 from '../assets/2.jpeg'
+import pic3 from '../assets/3.webp'
+import pic4 from '../assets/4.jpeg'
+
 import {faAngleDown, faCalendarAlt} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
@@ -11,25 +16,36 @@ const appointments = [
         id: 1,
         name: "Leanne Graham",
         date: "30/08/2021",
-        time: "20:00"
+        time: "20:00",
+        img: dp,
     },
     {
         id: 1,
         name: "Jennifer Moore",
         date: "05/09/2021",
-        time: "20:00"
+        time: "20:00",
+        img: pic1,
     },
     {
         id: 1,
         name: "Emily Ash",
         date: "29/08/2021",
-        time: "06:00"
+        time: "06:00",
+        img: pic2,
     },
     {
         id: 1,
         name: "Mohammed Ahmed",
         date: "13/09/2021",
-        time: "06:00"
+        time: "06:00",
+        img: pic3,
+    },
+    {
+        id: 1,
+        name: "Natalie King",
+        date: "13/09/2021",
+        time: "07:00",
+        img: pic4,
     },
     ];
 const CardList = ({ appointments }) => {
@@ -38,7 +54,7 @@ const CardList = ({ appointments }) => {
             <Card.Body>
                 <Row>
                     <Col md={4} className={'pb-2'}>
-                        <img width="70px" height="70px" src={dp} alt=""/>
+                        <img width="70px" height="70px" src={appointment.img} alt="" style={{borderRadius: '50%'}}/>
                     </Col>
                     <Col className={'mt-3 ml-5'}>
                         <h6 className={'appointment-title'}>{appointment.name}</h6>
@@ -63,6 +79,30 @@ const CardList = ({ appointments }) => {
         </div>
     );
 };
+const UpcomingList = ({ appointments }) => {
+    const cardsArray = appointments.map(appointment => (
+        <Card className={'card-appointment'} >
+            <Card.Body>
+                <Row>
+                    <Col md={4} className={'pb-2'}>
+                        <img width="70px" height="70px" src={appointment.img} alt="" style={{borderRadius: '50%'}}/>
+                    </Col>
+                    <Col className={'mt-3 ml-5'}>
+                        <h6 className={'appointment-title'}>{appointment.name}</h6>
+                        <h7 className={'appointment-subtitle'}><span style={{color: '#284E95'}}><FontAwesomeIcon icon={faCalendarAlt} /></span> {appointment.date} {appointment.time}</h7>
+                    </Col>
+                </Row>
+            </Card.Body>
+        </Card>
+    ));
+
+    return (
+        <div>
+            {cardsArray}
+        </div>
+    );
+};
+
 
 class Home extends React.Component {
     componentDidMount() {
@@ -92,7 +132,7 @@ class Home extends React.Component {
 
                                                         <div style={{overflowY: 'scroll',
                                                             float: 'left',
-                                                            height:'75%',
+                                                            height:'570px',
                                                             position:'relative'}}>
                                                             <CardList appointments={appointments} />
                                                         </div>
@@ -100,6 +140,13 @@ class Home extends React.Component {
                                                     </Col>
                                                     <Col md={4}>
                                                         <h5 className={'booking'}>Upcoming</h5>
+
+                                                        <div style={{overflowY: 'scroll',
+                                                            float: 'left',
+                                                            height:'570px',
+                                                            position:'relative'}}>
+                                                            <UpcomingList appointments={appointments} />
+                                                        </div>
                                                     </Col>
                                                     <Col md={4}>
                                                         <h5 className={'booking'}>Past appointments</h5>

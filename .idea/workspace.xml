@@ -20,12 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa380b9e-e71b-46c4-9198-496b499422d1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/dp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/style.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/4.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.cache/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Views/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/css/custom.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/custom.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +62,7 @@
       <option name="presentableId" value="Default" />
       <updated>1630084744182</updated>
       <workItem from="1630084746678" duration="96000" />
-      <workItem from="1630132583489" duration="9331000" />
+      <workItem from="1630132583489" duration="10185000" />
     </task>
     <servers />
   </component>
@@ -84,5 +85,17 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="184" y="109" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1630139502454" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/Views/Home.js</url>
+          <line>50</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
