@@ -1,5 +1,74 @@
-//@import "./node_modules/bootstrap/scss/bootstrap";
-//$default-color: #294E95 !default;
+.title {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #294E95;
+  padding-left: 3rem;
+}
+.subtitle {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #294E95;
+  padding-left: 3rem;
+}
+.link {
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+  color: #294E95;
+  padding-left: 3rem;
+  text-decoration: underline;
+  padding-bottom: 1rem;
+}
+.card-appointment {
+  border: 1px white !important;
+  border-radius: 30px !important;
+  width: 15rem !important;
+  margin-top: 20px !important;
+}
+
+.button {
+  border-radius: 15px !important;
+  padding: 10px 20px 10px 20px !important;
+  width: 100% !important;
+  font-family: "Poppins", sans-serif !important;
+  font-size: 12px !important;
+  font-width: '400';
+  text-align: center;
+  &.gray {
+    background-color: #E3E3E3 !important;
+    border: 1px #E3E3E3 !important;
+    color: #6F6F6F !important;
+  }
+  &.blue {
+    background-color: #284E95 !important;
+    border: 1px #284E95 !important;
+    color: white !important;
+  }
+}
+
+.appointment-title {
+  font-family: "Poppins", sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 300;
+  color: #332121;
+}
+
+.appointment-subtitle {
+  font-family: "Poppins", sans-serif !important;
+  font-size: 9px !important;
+  font-weight: 400;
+  color: #6F6F6F;
+}
+
+.booking {
+  font-family: "Poppins", sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 400;
+  color: #332121;
+}
+
 
 .copyright {
   position: fixed;
@@ -33,8 +102,6 @@
     z-index: 1029;
   }
 }
-
-
 .navbar-wrapper {
   display: inline-flex;
   align-items: center;
@@ -52,7 +119,6 @@
     }
   }
 }
-
 .image-cropper {
   max-width: 51px;
   //margin-top:5px;
@@ -60,3 +126,4 @@
   position: relative;
   overflow: hidden;
 }
+
