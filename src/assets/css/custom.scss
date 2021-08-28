@@ -1,0 +1,62 @@
+//@import "./node_modules/bootstrap/scss/bootstrap";
+//$default-color: #294E95 !default;
+
+.copyright {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: #6A6868;
+  text-align: center !important;
+  font-size: 15px;
+  font-weight: lighter;
+  font-family: "Poppins", sans-serif;
+}
+.navbar {
+  padding-top: 0.5rem;;
+  padding-bottom: 0.5rem;;
+  min-height: 53px;
+  background-color: #ffffff;
+  box-shadow: 0 0 2rem 0 rgba(136, 152, 170, .15);
+
+  a {
+    vertical-align: middle;
+    color: #294E95;
+    text-decoration: none;
+  }
+
+  &.navbar-sticky {
+    position: sticky;
+    top:0;
+    width: 100%;
+    padding:0;
+    z-index: 1029;
+  }
+}
+
+
+.navbar-wrapper {
+  display: inline-flex;
+  align-items: center;
+
+  .navbar-minimize {
+    margin-left: 24px;
+
+    .btn {
+      padding: 0;
+      margin: 0;
+
+      i {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.image-cropper {
+  max-width: 51px;
+  //margin-top:5px;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
