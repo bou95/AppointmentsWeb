@@ -5,13 +5,14 @@ import Home from "./Views/Home";
 import NavHeader from "./Views/NavHeader";
 import Footer from "./Views/Footer";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import AppRoutes from "./Core/AppRoutes";
 
 function App() {
   return (
     <>
         <div>
             <NavHeader/>
-            <Home className="h-100" />
+            <AppRoutes className="h-100"/>
             <Footer/>
         </div>
     </>

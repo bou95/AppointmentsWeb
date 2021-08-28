@@ -1,6 +1,5 @@
 import React from "react";
-import PropTypes from "prop-types";
-import {Button, Col, Container, Row} from "react-bootstrap";
+import {Col, Container, Row} from "react-bootstrap";
 
 class Footer extends React.Component {
   render() {
@@ -17,10 +16,5 @@ class Footer extends React.Component {
     );
   }
 }
-
-// Footer.propTypes = {
-//   default: PropTypes.bool,
-//   fluid: PropTypes.bool,
-// };
 
 export default Footer;

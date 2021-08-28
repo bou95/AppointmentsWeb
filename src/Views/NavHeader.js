@@ -5,6 +5,7 @@ import logo from '../assets/logo.png'
 import avatar from '../assets/pp.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faAngleDown} from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 class NavHeader extends React.Component {
 	state={
@@ -18,11 +19,13 @@ class NavHeader extends React.Component {
 					</div>
 					<div className={'col-8'}>
 						<div className={'row'}>
-							<Nav.Link className={'col-2'}>
+							<Nav.Link className={'col-2'} to="/"
+									  // as={Link}
+							>
 								<span>Appointments</span>
 							</Nav.Link>
 
-							<Nav.Link className={'col-2'}>
+							<Nav.Link className={'col-2'} to="/schedule">
 								<span>My Schedule</span>
 							</Nav.Link>
 
