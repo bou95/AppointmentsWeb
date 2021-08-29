@@ -14,7 +14,7 @@ class NavHeader extends React.Component {
 	render() {
 		return (
 			<Navbar expand="lg" style={{fontFamily: 'Poppins', fontSize: '14px', color: '#585858'}} className={'row'}>
-					<div className={'col-2'} style={{paddingLeft: 20}}>
+					<div className={'col-2'} style={{paddingLeft: 40}}>
 						<img width="155px" height="50px" src={logo} alt="" />
 					</div>
 					<div className={'col-8'}>
