@@ -3,6 +3,9 @@ import {BrowserView, MobileView} from "react-device-detect";
 import {Card, Col, Container, Row} from "react-bootstrap";
 import style from "../assets/style.png";
 import {Link} from "react-router-dom";
+import moment from 'moment';
+import ReactTimeslotCalendar from 'react-timeslot-calendar';
+
 
 class Schedule extends React.Component {
     render() {
@@ -24,7 +27,12 @@ class Schedule extends React.Component {
                             <Col xs="12" sm="12" md="9" lg="9">
                                 <Card style={{ fontSize: 'small', backgroundColor: '#F4F4F4', borderColor:'#F4F4F4', height: '80vh', top: 30, right: 20 }} className={'homeCard'}>
                                     <Card.Body>
-
+                                        <ReactTimeslotCalendar
+                                            initialDate={moment().format()}
+                                            timeslots = { [
+                                                ['9'], ['10'], ['11'], ['12'], ['13'], ['14'], ['15'],
+                                            ] }
+                                        />
                                     </Card.Body>
                                 </Card>
                             </Col>

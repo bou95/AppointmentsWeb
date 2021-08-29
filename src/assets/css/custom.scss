@@ -69,7 +69,6 @@
   color: #332121;
 }
 
-
 .copyright {
   position: fixed;
   left: 0;
@@ -127,3 +126,26 @@
   overflow: hidden;
 }
 
+.tsc-timeslot {
+  border: 1px #294E95 !important;
+  border-radius: 20px !important;
+  background-color: #f2f1ef !important;
+  color: #313232 !important;
+}
+.tsc-timeslot--selected {
+  border: 1px #294E95 !important;
+  border-radius: 20px !important;
+  background-color: #294E95 !important;
+  color: white !important;
+}
+
+.tsc-timeslot--disabled {
+  border: 1px #E3E3E3 !important;
+  border-radius: 20px !important;
+  background-color: #E3E3E3 !important;
+  color: #6F6F6F !important;
+}
+
+.tsc-day__title, .tsc-month__action {
+  color: #294E95 !important;
+}
