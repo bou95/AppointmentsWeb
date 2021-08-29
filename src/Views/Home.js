@@ -10,6 +10,7 @@ import pic4 from '../assets/4.jpeg'
 
 import {faAngleDown, faCalendarAlt} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {Link} from "react-router-dom";
 
 const appointments = [
     {
@@ -31,14 +32,14 @@ const appointments = [
         name: "Emily Ash",
         date: "29/08/2021",
         time: "06:00",
-        img: pic2,
+        img: pic3,
     },
     {
         id: 1,
-        name: "Mohammed Ahmed",
+        name: "Mohammed Ali",
         date: "13/09/2021",
         time: "06:00",
-        img: pic3,
+        img: pic2,
     },
     {
         id: 1,
@@ -110,7 +111,7 @@ class Home extends React.Component {
 
     render() {
         return (
-                    <div className="site-section bg-image-home overlay" style={{ position: 'relative' }}>
+            <div className="site-section bg-image-home overlay" style={{ position: 'relative' }}>
                         <BrowserView>
                             <Container fluid className="h-100">
                                 <Row className="justify-content-center align-items-center no-gutters h-100">
@@ -118,8 +119,9 @@ class Home extends React.Component {
                                         <h4 className={'title'}>Welcome Emily</h4>
                                         <h7 className={'subtitle'}>How can we help you?</h7>
                                         <br/><br/><br/>
-                                        <h6 className={'link'}>Define available slots ></h6>
-                                        <h6 className={'link'}>Appointment requests ></h6>
+                                        <h6><Link className={'link col-2'} to="/schedule">Define available slots ></Link></h6>
+                                        <br/>
+                                        <h6><Link className={'link col-2'} to="/">Appointment requests ></Link></h6>
 
                                         <img width="300px" height="200px" src={style} alt="" style={{bottom: 0, position: 'fixed'}}/>
                                     </Col>

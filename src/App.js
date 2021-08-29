@@ -5,17 +5,22 @@ import Home from "./Views/Home";
 import NavHeader from "./Views/NavHeader";
 import Footer from "./Views/Footer";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import AppRoutes from "./Core/AppRoutes";
+import {BrowserRouter, Route, Switch} from "react-router-dom";
+import Schedule from "./Views/Schedule";
+import React from "react";
 
 function App() {
   return (
-    <>
-        <div>
-            <NavHeader/>
-            <AppRoutes className="h-100"/>
-            <Footer/>
-        </div>
-    </>
+      <>
+          <BrowserRouter>
+              <NavHeader/>
+              <Switch>
+                  <Route path={"/"} exact><Home/></Route>
+                  <Route path={"/schedule"} exact><Schedule/></Route>
+              </Switch>
+              <Footer/>
+          </BrowserRouter>
+      </>
   );
 }
 
